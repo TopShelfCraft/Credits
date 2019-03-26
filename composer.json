@@ -1,0 +1,48 @@
+{
+    "name": "topshelfcraft/credits",
+    "description": "A simple starter framework for implementing credits/accounts with Craft Commerce.",
+    "type": "craft-plugin",
+    "version": "3.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "credits",
+        "accounts",
+        "balance",
+        "commerce",
+        "craftcommerce"
+    ],
+    "support": {
+        "email": "support@topshelfcraft.com",
+        "issues": "https://github.com/topshelfcraft/credits/issues"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Top Shelf Craft (Michael Rog)",
+            "homepage": "https://topshelfcraft.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "topshelfcraft\\credits\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Credits",
+        "handle": "credits",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/topshelfcraft/credits/master/CHANGELOG.md",
+        "components": {
+            "accounts": "topshelfcraft\\credits\\services\\Accounts",
+            "transactions": "topshelfcraft\\credits\\services\\Transactions"
+        },
+        "class": "topshelfcraft\\credits\\Credits"
+    }
+}
